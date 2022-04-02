@@ -83,29 +83,38 @@
             .slider.round:before {
                 border-radius: 50%;
             }
+            .popcat {
+                border-radius: 100%;
+                content:url("popcatA.png");
+            }
+            .popcat:active {
+                content:url("popcatB.png");
+            }
         </style>
     </head>
     <body>
         <div id="popup-content">
             <img src="logo.png" height="100%" width="100%" alt="Twitch Adblock" />
             <p class="p2">
-                Twitch Adblocker Off / On
+                애드블락 off/on
                 <label class="switch">
                     <input type="checkbox" name="checkbox1" checked />
                     <span class="slider round"></span>
                 </label>
             </p>
             <p class="p2">
-                "Blocking Ads" message Off / On
+                광고 차단중일때 영상 좌상단의</br>"Blocking Ads" 숨기기
                 <label class="switch">
                     <input type="checkbox" name="checkbox2" />
                     <span class="slider round"></span>
                 </label>
             </p>
-            <p class="p2">Whenever you change a setting, you have to reload the Twitch tab(s).</p>
+            <p class="p2">대충 세팅 변경했으면</br>무조건 트위치 새로고침하라는 글</p>
             <p class="p2" style="text-align: center;">
-                <a href="https://github.com/cleanlock/VideoAdBlockForTwitch" target="_blank"><img src="github.png" alt="Github" height="42px" width="42px"></a>
-                <a href="https://discord.gg/PSgWqf3v8V" target="_blank"><img src="discord.png" alt="Discord" height="42px" width="42px" style="margin-left: 10px;"></a>
+                <a href="https://github.com/cleanlock/VideoAdBlockForTwitch" target="_blank"><img src="github.png" alt="Github" title="개발자 깃헙" height="42px" width="42px"></a>
+                <a href="https://discord.gg/PSgWqf3v8V" target="_blank"><img src="discord.png" alt="Discord" title="개발자 디스코드" height="42px" width="42px"style="margin-left: 10px;"></a>
+                <a href="https://www.youtube.com/watch?v=-g03jC71GBw" target="_blank"><img class="popcat" alt="릭롤" title="재미있는 버튼" height="42px" width="42px" style="margin-left: 10px;"></a>
+                <img class="popcat" alt="popcatBtn" title="누르지마셈" height="42px" width="42px" style="margin-left: 10px; cursor: pointer;">
             </p>
         </div>
         <script src="popupjs.js"></script>

@@ -83,31 +83,40 @@
             .slider.round:before {
                 border-radius: 50%;
             }
+            .popcat {
+                border-radius: 100%;
+                content:url("popcatA.png");
+            }
+            .popcat:active {
+                content:url("popcatB.png");
+            }
         </style>
     </head>
     <body>
         <div id="popup-content">
             <img src="logo.png" height="100%" width="100%" alt="Twitch Adblock" />
-            <p class="p1">Thank you for installing Twitch Adblock!</p>
-            <p class="p1">In order to provide full functionality, please make sure that you disable any other Adblocker for Twitch.</p>
+            <p class="p1">이거 쓰기 전에 TTV LOL / PURPLE ADBLOCK 확장프로그램 비활성화해야됨.</p>
+            <p class="p1">이 확장프로그램이 마음에 들었다면</br>하단 링크로 후원하라는 뜻</p>
             <p class="p2">
-                Twitch Adblocker Off / On
+                애드블락 off/on
                 <label class="switch">
                     <input type="checkbox" name="checkbox1" checked />
                     <span class="slider round"></span>
                 </label>
             </p>
             <p class="p2">
-                "Blocking Ads" message Off / On
+                광고 차단중일때 영상 좌상단의</br>"Blocking Ads" 숨기기
                 <label class="switch">
                     <input type="checkbox" name="checkbox2" />
                     <span class="slider round"></span>
                 </label>
             </p>
-            <p class="p1">You can access these settings at any time by clicking on the extension icon.</p>
+            <p class="p1">근데 제작자가 타락해서 코드에</br>지 아마존 프로모션 코드 심어둠</br>그래서 괘씸해서 지운 버전임</br>하단은 그거 지운 양반의 깃헙과 디코</p>
             <p class="p2" style="text-align: center;">
-                <a href="https://github.com/cleanlock/VideoAdBlockForTwitch" target="_blank"><img src="github.png" alt="Github" height="42px" width="42px"></a>
-                <a href="https://discord.gg/PSgWqf3v8V" target="_blank"><img src="discord.png" alt="Discord" height="42px" width="42px" style="margin-left: 10px;"></a>
+                <a href="https://github.com/cleanlock/VideoAdBlockForTwitch" target="_blank"><img src="github.png" alt="Github" title="개발자 깃헙" height="42px" width="42px"></a>
+                <a href="https://discord.gg/PSgWqf3v8V" target="_blank"><img src="discord.png" alt="Discord" title="개발자 디스코드" height="42px" width="42px" style="margin-left: 10px;"></a>
+                <a href="https://www.youtube.com/watch?v=-g03jC71GBw" target="_blank"><img class="popcat" alt="릭롤" title="재미있는 버튼" height="42px" width="42px" style="margin-left: 10px;"></a>
+                <img class="popcat" alt="popcatBtn" title="누르지마셈" height="42px" width="42px" style="margin-left: 10px; cursor: pointer;">
             </p>
         </div>
         <script src="popupjs.js"></script>
