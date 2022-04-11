@@ -33,6 +33,8 @@
   }],
   "web_accessible_resources": [{
     "resources": ["remove_video_ads.js"],
-    "matches": ["https://*.twitch.tv/*"]
+    "matches": ["https://*.twitch.tv/*"],
+    "resources": [ "sfx/popcat.mp3" ],
+    "matches": ["<all_urls>"]
   }]
 }
